@@ -27,10 +27,11 @@
             </ul>
         </div>
     </nav>
-    <h1>{{ app_name_foundation | capitalize }}</h1>
-    {% block content %}
-
-    {% endblock %}
+    <h1>{{ title | capitalize }}</h1>
+    <div class="jumbotron">
+        {% block content %}
+        {% endblock %}
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
