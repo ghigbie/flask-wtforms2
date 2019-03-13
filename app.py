@@ -27,3 +27,12 @@ def index():
         session['mood'] = form.mood.data
         session['food_choice'] = form.food_choice.data
         session['feedback'] = form.feedback.data
+
+        return redirect(url_for('thankyou'))
+
+@app.route('/thankyou')
+def thankyou():
+    return render_template('thankyou.html')
+
+if __name__ == "__main__":
+    app.run(debug=True)
