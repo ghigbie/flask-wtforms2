@@ -15,3 +15,5 @@ class InfoForm(FlaskForm):
                       choices=[('mood_one', 'Happy'), ('mood_two', 'Excited'), ('mood_three', 'Sleepy')])
     food_choice = SelectField(u"Pick your favorite food: ",
                               choices=[('chi', 'Chicken'), ('bf', 'Beef'), ('pk', 'Pork'), ('fish', 'Fish') ])
+    feedback = TextAreaField()
+    submit = Submit("Submit Info")
