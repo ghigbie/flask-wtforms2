@@ -16,7 +16,7 @@ class InfoForm(FlaskForm):
     food_choice = SelectField(u"Pick your favorite food: ",
                               choices=[('chi', 'Chicken'), ('bf', 'Beef'), ('pk', 'Pork'), ('fish', 'Fish') ])
     feedback = TextAreaField()
-    submit = Submit("Submit Info")
+    submit = SubmitField("Submit Info")
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
