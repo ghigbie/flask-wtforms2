@@ -6,7 +6,7 @@ from wtforms.validators import DataRequired
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'mysecretkey'
-title = 'Flask WTForms - More Practice'
+title = 'Flask WTForms'
 
 class InfoForm(FlaskForm):
     breed = StringField('What breed our you? ', validators=[DataRequired()])
