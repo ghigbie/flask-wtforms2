@@ -29,10 +29,12 @@ def index():
         session['feedback'] = form.feedback.data
 
         return redirect(url_for('thankyou'))
+    
+    return render_template('index.html', form=form, title=title)
 
 @app.route('/thankyou')
 def thankyou():
-    return render_template('thankyou.html')
+    return render_template('thankyou.html', title=title)
 
 if __name__ == "__main__":
     app.run(debug=True)
