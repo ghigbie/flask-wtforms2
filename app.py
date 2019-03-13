@@ -14,4 +14,4 @@ class InfoForm(FlaskForm):
     mood = RadioField("Please choose your mood:",
                       choices=[('mood_one', 'Happy'), ('mood_two', 'Excited'), ('mood_three', 'Sleepy')])
     food_choice = SelectField(u"Pick your favorite food: ",
-                              choices=[('chi', 'chicken'), ('bf', 'beef'), ('pk', 'pork')])
+                              choices=[('chi', 'Chicken'), ('bf', 'Beef'), ('pk', 'Pork'), ('fish', 'Fish') ])
