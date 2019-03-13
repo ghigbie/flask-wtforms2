@@ -2,4 +2,14 @@
 
 {% block content %}
 
+    <form action=""
+          method="POST">
+          {{ form.hidden_tag() }}
+          {{ form.breed.label }}{{ form.breed() }}
+          {{ form.nuetered.label }}{{ form.nuetered }}
+          {{ form.mood.label }}{{ form.mood() }}
+          {{ form.food_choice.label }}{{ form.food_choice }}
+          {{ form.feedback() }}
+          {{ form.submit() }}
+    </form>
 {% endblock %}
